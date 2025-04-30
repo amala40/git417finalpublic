@@ -1,0 +1,544 @@
+.sr-only{
+    display: none;
+}
+ 
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 1rem;
+    position: sticky;
+    top:0;
+    background-color: #fff5e6;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+ 
+body {
+    font-family: Verdana, sans-serif;
+    color: black;
+    background-color: #fff5e6;
+}
+
+main{
+    margin: 0 auto;
+}
+
+nav a {
+    background-color: #add8e6; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+}
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-self: end;
+}
+
+nav button{
+    padding: 0.5rem 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    padding-bottom: 1rem;
+}
+
+h1{
+font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    }
+
+
+h3{
+        font-size: 1.5rem;
+        }
+
+
+#product1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin:0 auto;
+    max-width: 600px;
+}
+  
+#product1 h3 {
+    grid-column: 1 / 3; 
+}
+  
+#product1 img {
+    grid-column: 1 / 2; 
+    width: 200px;      
+    height: auto;
+}
+  
+#product1 p {
+    grid-column: 2 / 3; 
+}
+
+#product2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin:0 auto;
+    max-width: 600px;
+}
+
+#product2 h3 {
+    grid-column: 1 / 3; 
+}
+  
+#product2 img {
+    grid-column: 1 / 2; 
+    width: 200px;      
+    height: auto;
+}
+  
+#product2 p {
+    grid-column: 2 / 3; 
+}
+
+#product3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin:0 auto;
+    max-width: 600px;
+}
+
+#product3 h3 {
+    grid-column: 1 / 3; 
+}
+  
+#product3 img {
+    grid-column: 1 / 2; 
+    width: 200px;      
+    height: auto;
+}
+  
+#product3 p {
+    grid-column: 2 / 3; 
+}
+
+#product4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin:0 auto;
+    max-width: 600px;
+}
+
+#product4 h3 {
+    grid-column: 1 / 3; 
+}
+  
+#product4 img {
+    grid-column: 1 / 2; 
+    width: 200px;      
+    height: 309px;
+}
+  
+#product4 p {
+    grid-column: 2 / 3; 
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+button{
+    
+    font-family: Verdana, sans-serif;
+}
+ 
+#product-display .hidden {
+    display: none;
+}
+
+#product-display{
+    padding: 2rem 0;
+}
+
+#guessing-game{
+	margin-top: 2rem;	
+	padding-bottom: 2rem;
+}
+
+#guessing-game div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+#guessing-game h3{
+	grid-column: 1/-1;
+    
+}
+
+#guessing-game form{
+	padding: 1rem;
+}
+
+#guessing-game label{
+	margin:0;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.hidden.required {
+    display: none;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+form{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  label{
+    display: block;
+    margin: 1rem 0 0 1rem;
+  }
+  
+  .required{
+    display: inline-block;
+    color: red;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  
+  
+  input[type="text"], input[type="email"], input[type="tel"]{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    line-height: 1;
+    height: 2.5rem;
+  }
+  
+  input:focus{
+    border: 2px solid lightskyblue;
+  }
+  
+  
+  fieldset{
+    width: 100%;
+    border-color: black;
+    margin: 1rem auto 0.5rem auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  legend{
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  }
+  
+ 
+  label.radio{
+    font-size: 1rem;
+    color: black;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0 1rem 0;
+    margin: 0 0 0 2rem;
+  }
+  
+  input[type="radio"]{
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .radio_input{
+    display: flex;
+  }
+  
+  span.radio_control{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.1rem solid lightblue;
+    transform: translateY(-0.05rem);
+    color: black;
+  }
+  
+  span.radio_label{
+    line-height: 1;
+    height: auto;
+    color: black;
+  }
+  
+  .radio_input input:checked + .radio_control{
+    background: radial-gradient(lightblue 50%, rgba(255, 0, 0, 0) 51%);
+  }
+  
+  .radio_input input:focus + .radio_control{
+    box-shadow: 0 0 0 0.05rem white, 0 0 0.15rem 0.1rem lightblue;
+  }
+
+  
+  
+input[type="text"].error, .darkMode input[type="text"].error, input[type="email"].error, .darkMode input[type="email"].error,  input[type="tel"].error , .darkMode input[type="tel"].error, textarea.error, .darkMode textarea.error{
+    border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  }
+
+
+.darkMode header{
+    background-color:#121212;
+    box-shadow: 0 4px 6px -4px white;
+}
+
+.darkMode h1 a{
+    background-color:#121212;
+}
+
+.error{
+    color: red;
+    
+}
+  
+#confirm{
+    color: red;
+}
+  
+#termsError, input + span, p ol{
+    color: red;
+  }
+
+
+  #mySubmit{
+    display: block;
+    padding: 0.75rem;
+    width: 50%;
+    margin: 1rem auto;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+ 
+  #mySubmit:focus{
+    border: 2px solid lightskyblue;
+  }
+  
+  #confirm, #msg{
+    width: 100%;
+    max-width: 75ch;
+    margin: 1rem auto;
+    padding: 2rem;
+    justify-items: center;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    line-height: 1.5;
+    height: auto;
+}
+
+textarea:focus {
+    border: 2px solid lightskyblue;
+}
+
+button:not([type="submit"]) {
+    background-color: #add8e6; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 1rem; 
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: none;
+}
+
+button:not([type="submit"]):hover{
+    transform: scale(1.05);
+}
+
+button:not([type="submit"]):focus{
+    transform: scale(0.95);
+}
+
+
+  
+  .large{
+    font-size: 1.5rem;
+  }
+  
+  strong{
+    font-weight: bold;
+  }
+  
+  footer p{
+    color: black;
+  }
+
+
+  .darkMode {
+    background-color: #121212; 
+    color: #fdf4e3; 
+}
+
+.darkMode a {
+    background-color: #2a2a2a; 
+    color: #fdf4e3; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.darkMode a:hover {
+    background-color: #f4f4f4; 
+    color: #121212; 
+}
+
+.darkMode a:focus {
+    outline: none;
+    border: 2px solid #fdf4e3; 
+}
+
+.darkMode button, .darkMode input, .darkMode textarea {
+    background-color: #2a2a2a; 
+    color: #fdf4e3;
+    border: 1px solid #fdf4e3; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.darkMode button:hover, .darkMode a:hover {
+    background-color: #f4f4f4; 
+    color: #121212; 
+}
+
+.darkMode button:focus, .darkMode a:focus {
+    outline: none;
+    border: 2px solid #fdf4e3; 
+}
+
+.darkMode #mySubmit {
+    background-color: #d3d3d3; 
+    color: #121212; 
+    border: none;
+}
+
+.darkMode #mySubmit:hover {
+    background-color: #f4f4f4; 
+}
+
+.darkMode #mySubmit:focus {
+    outline: none;
+    border: 2px solid #fdf4e3; 
+}
+
+.darkMode fieldset {
+    color: #fdf4e3; 
+    border-color: #fdf4e3; 
+}
+
+.darkMode .radio_label {
+    color: #fdf4e3; 
+}
+
+.darkMode .radio_input input:checked + .radio_control {
+    background: radial-gradient(#fdf4e3 50%, rgba(255, 0, 0, 0) 51%); 
+}
+
+.darkMode .radio_input input:focus + .radio_control {
+    box-shadow: 0 0 0 0.05rem white, 0 0 0.15rem 0.1rem #fdf4e3; 
+}
+
+.darkMode textarea {
+    background-color: #2a2a2a; 
+    color: #fdf4e3; 
+    border: 1px solid #fdf4e3;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+.darkMode textarea:focus {
+    border: 2px solid #fdf4e3; 
+}
+
+.darkMode input[type="text"], .darkMode input[type="email"], .darkMode input[type="tel"], .darkMode input[type="number"], .darkMode input[type="password"] {
+    background-color: #2a2a2a; 
+    color: #fdf4e3; 
+    border: 1px solid #fdf4e3; 
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.darkMode input[type="text"]:focus, .darkMode input[type="email"]:focus, .darkMode input[type="tel"]:focus, .darkMode input[type="number"]:focus, .darkMode input[type="password"]:focus {
+    border: 2px solid #fdf4e3; 
+}
